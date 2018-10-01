@@ -11,12 +11,24 @@
               transition="slide-y-transition"
           ></v-carousel-item>
         </v-carousel>
+
+        <info-firm />
+        <apply />
+        <about />
+        <contact />
+
+
       </v-layout>
     </v-slide-y-transition>
   </v-container>
 </template>
 
 <script>
+  import InfoFirm from "./HomeViewComponents/InfoFirm.vue";
+  import Apply from "./HomeViewComponents/Apply.vue";
+  import About from "./HomeViewComponents/About.vue";
+  import Contact from "./HomeViewComponents/Contact.vue";
+
   export default {
     data() {
       return {
@@ -36,6 +48,14 @@
         ]
       }
     },
+
+    components: {
+      "info-firm": InfoFirm,
+      "apply": Apply,
+      "about": About,
+      "contact": Contact
+
+    }
   };
 </script>
 
