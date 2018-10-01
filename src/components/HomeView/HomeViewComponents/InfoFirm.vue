@@ -1,15 +1,40 @@
 <template>
-  <v-layout>
-    Info About the firm
+  <v-layout column wrap class="my-5" align-center>
+    <v-flex xs12 sm4 class="my-3">
+      <div class="text-xs-center">
+        <h6 class="headline">Innovinc</h6>
+        <span class="subheading">
+            A tagline because they're awesome!<br>
+        </span>
+      </div>
+    </v-flex>
+    <v-flex xs12>
+          <v-flex xs12 class="text-xs-center">
+            <v-card class="elevation-0 transparent">
+              <v-card-text class="text-xs-center">
+                <v-icon x-large class="purple--text text--lighten-2">people</v-icon>
+              </v-card-text>
+              <v-card-title primary-title class="layout justify-center">
+                <div class="headline text-xs-center">Who we are</div>
+              </v-card-title>
+              <v-card-text>
+                Cras facilisis mi vitae nunc lobortis pharetra. Nulla volutpat tincidunt ornare.
+                Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
+                turpis egestas.
+                Nullam in aliquet odio. Aliquam eu est vitae tellus bibendum tincidunt. Suspendisse
+                potenti.
+              </v-card-text>
+            </v-card>
+          </v-flex>
+    </v-flex>
   </v-layout>
 </template>
 
 <script>
   export default {
     name: "InfoFirm"
-  }
+  };
 </script>
 
 <style scoped>
-
 </style>
