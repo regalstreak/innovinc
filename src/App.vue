@@ -9,9 +9,9 @@
 
       <v-toolbar-items >
         <v-btn flat>Outsource</v-btn>
-        <v-btn flat>Jobs Available</v-btn>
+        <v-btn flat>Apply for Jobs</v-btn>
+        <v-btn flat>Contact Us</v-btn>
         <v-btn flat>About Us</v-btn>
-        <v-btn flat>Contact</v-btn>
       </v-toolbar-items>
 
     </v-toolbar>

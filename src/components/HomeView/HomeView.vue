@@ -14,8 +14,8 @@
 
         <info-firm />
         <apply />
-        <about />
         <contact />
+        <about />
 
 
       </v-layout>
