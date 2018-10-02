@@ -1,16 +1,18 @@
 <template>
   <v-slide-y-transition mode="out-in">
     <v-layout column>
-      <v-carousel :style="{ height: windowHeight + 50 + 'px'}">
-        <v-carousel-item
-            v-for="(item,i) in items"
-            :key="i"
-            :src="item.src"
-            reverse-transition="slide-x-transition"
-            transition="slide-y-transition"
-        >
-        </v-carousel-item>
-      </v-carousel>
+      <div style="height: calc( 100vh + 60px )">
+        <v-carousel style="height: 100%">
+          <v-carousel-item
+              v-for="(item,i) in items"
+              :key="i"
+              :src="item.src"
+              reverse-transition="slide-x-transition"
+              transition="slide-y-transition"
+          >
+          </v-carousel-item>
+        </v-carousel>
+      </div>
 
       <info-firm />
       <apply />
@@ -48,16 +50,10 @@ export default {
         },
         {
           src:
-            "https://stmed.net/sites/default/files/abstract-wallpapers-25162-8981309.jpgO"
+            "https://stmed.net/sites/default/files/abstract-wallpapers-25162-8981309.jpg"
         }
       ]
     };
-  },
-
-  computed: {
-    windowHeight() {
-      return window.innerHeight;
-    }
   },
 
   components: {
@@ -90,4 +86,5 @@ li {
 a {
   color: #42b983;
 }
+
 </style>

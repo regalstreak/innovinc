@@ -1,69 +1,71 @@
 <template>
-  <v-parallax
-      src="https://cdn.vuetifyjs.com/images/backgrounds/vbanner.jpg">
-    <v-container justify-center>
-      <v-layout row justify-center wrap>
-        <v-flex md6>
-          <form>
-            <v-text-field
-                v-model="name"
-                :error-messages="nameErrors"
-                label="Name"
-                solo
-                required
-                @input="$v.name.$touch()"
-                @blur="$v.name.$touch()"
-            ></v-text-field>
-            <v-text-field
-                v-model="email"
-                :error-messages="emailErrors"
-                label="E-mail"
-                solo
-                required
-                @input="$v.email.$touch()"
-                @blur="$v.email.$touch()"
-            ></v-text-field>
+  <div id="fullHeight">
+    <v-parallax
+        src="https://cdn.vuetifyjs.com/images/backgrounds/vbanner.jpg" style="height: 100%">
+      <v-container justify-center>
+        <v-layout row justify-center wrap>
+          <v-flex md6>
+            <form>
+              <v-text-field
+                  v-model="name"
+                  :error-messages="nameErrors"
+                  label="Name"
+                  solo
+                  required
+                  @input="$v.name.$touch()"
+                  @blur="$v.name.$touch()"
+              ></v-text-field>
+              <v-text-field
+                  v-model="email"
+                  :error-messages="emailErrors"
+                  label="E-mail"
+                  solo
+                  required
+                  @input="$v.email.$touch()"
+                  @blur="$v.email.$touch()"
+              ></v-text-field>
 
-            <v-select
-                v-model="select"
-                :items="items"
-                :error-messages="selectErrors"
-                label="Item"
-                solo
-                required
-                @change="$v.select.$touch()"
-                @blur="$v.select.$touch()"
-            ></v-select>
+              <v-select
+                  v-model="select"
+                  :items="items"
+                  :error-messages="selectErrors"
+                  label="Item"
+                  solo
+                  required
+                  @change="$v.select.$touch()"
+                  @blur="$v.select.$touch()"
+              ></v-select>
 
-            <v-checkbox
-                v-model="checkbox"
-                :error-messages="checkboxErrors"
-                label="Do you agree?"
-                required
-                @change="$v.checkbox.$touch()"
-                @blur="$v.checkbox.$touch()"
-            ></v-checkbox>
+              <v-checkbox
+                  v-model="checkbox"
+                  :error-messages="checkboxErrors"
+                  label="Do you agree?"
+                  required
+                  @change="$v.checkbox.$touch()"
+                  @blur="$v.checkbox.$touch()"
+              ></v-checkbox>
 
-            <v-btn @click="submit">submit</v-btn>
-            <v-btn @click="clear">clear</v-btn>
-          </form>
-        </v-flex>
-      </v-layout>
-    </v-container>
-  </v-parallax>
+              <v-btn @click="submit">submit</v-btn>
+              <v-btn @click="clear">clear</v-btn>
+            </form>
+          </v-flex>
+        </v-layout>
+      </v-container>
+    </v-parallax>
+  </div>
 </template>
 <script>
-import { validationMixin } from "vuelidate";
-import { required, email, alpha } from "vuelidate/lib/validators";
+import {validationMixin} from "vuelidate";
+import {required, email, alpha} from "vuelidate/lib/validators";
 
 export default {
   mixins: [validationMixin],
 
   validations: {
-    name: { required, alpha },
-    email: { required, email },
-    select: { required },
-    checkbox: { required }
+    name: {required, alpha},
+    email: {required, email},
+    select: {required},
+    checkbox: {required}
   },
 
   data: () => ({
@@ -118,4 +120,7 @@ export default {
 </script>
 
 <style scoped>
+#fullHeight {
+  height: 100vh;
+}
 </style>
