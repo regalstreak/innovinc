@@ -69,9 +69,9 @@
 </template>
 
 <script>
-  export default {
-    name: "InfoFirm"
-  };
+export default {
+  name: "InfoFirm"
+};
 </script>
 
 <style scoped>

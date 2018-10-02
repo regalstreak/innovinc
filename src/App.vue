@@ -24,32 +24,31 @@
 </template>
 
 <script>
-  export default {
-    name: "App",
-    data() {
-      return {
-        title: "innovinc",
-        scrollPosition: null
-      };
+export default {
+  name: "App",
+  data() {
+    return {
+      title: "innovinc",
+      scrollPosition: null
+    };
+  },
+  methods: {
+    updateScroll() {
+      this.scrollPosition = window.scrollY;
     },
-    methods: {
-      updateScroll() {
-        this.scrollPosition = window.scrollY;
-      },
-      updateToolbarScrollColor() {
-        if (this.scrollPosition >= 630) {
-          return "undefined";
-        } else {
-          return "rgba(0, 0, 0, 0)";
-        }
+    updateToolbarScrollColor() {
+      if (this.scrollPosition >= 630) {
+        return "undefined";
+      } else {
+        return "rgba(0, 0, 0, 0)";
       }
-    },
-    mounted() {
-      window.addEventListener("scroll", this.updateScroll);
-    },
-    destroy() {
-      window.removeEventListener("scroll", this.updateScroll);
     }
-
-  };
+  },
+  mounted() {
+    window.addEventListener("scroll", this.updateScroll);
+  },
+  destroy() {
+    window.removeEventListener("scroll", this.updateScroll);
+  }
+};
 </script>

@@ -1,7 +1,10 @@
 <template>
-  <v-layout>
+  <v-parallax
+      src="https://cdn.vuetifyjs.com/images/backgrounds/vbanner.jpg">
+
     Apply for job
-  </v-layout>
+
+  </v-parallax>
 </template>
 
 <script>

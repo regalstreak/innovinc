@@ -11,9 +11,7 @@
     <v-flex xs12>
           <v-flex xs12 class="text-xs-center">
             <v-card class="elevation-0 transparent">
-              <v-card-text class="text-xs-center">
-                <v-icon x-large class="purple--text text--lighten-2">people</v-icon>
-              </v-card-text>
+              <v-divider class="mx-5" />
               <v-card-title primary-title class="layout justify-center">
                 <div class="headline text-xs-center">Who we are</div>
               </v-card-title>
@@ -31,9 +29,9 @@
 </template>
 
 <script>
-  export default {
-    name: "InfoFirm"
-  };
+export default {
+  name: "InfoFirm"
+};
 </script>
 
 <style scoped>

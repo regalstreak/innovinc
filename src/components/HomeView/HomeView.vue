@@ -8,7 +8,8 @@
               :src="item.src"
               reverse-transition="slide-x-transition"
               transition="slide-y-transition"
-          ></v-carousel-item>
+          >
+          </v-carousel-item>
         </v-carousel>
 
         <info-firm/>
@@ -34,16 +35,20 @@ export default {
     return {
       items: [
         {
-          src: "https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg"
+          src:
+            "https://i.pinimg.com/originals/c3/12/16/c31216424b811a9770b5b7dacb06fa3e.jpg"
         },
         {
-          src: "https://cdn.vuetifyjs.com/images/carousel/sky.jpg"
+          src:
+            "https://www.desktopbackground.org/download/o/2011/07/30/242366_3d-abstract-wallpapers-hd-free-download-33837-full-hd-wallpapers_1075x720_h.jpg"
         },
         {
-          src: "https://cdn.vuetifyjs.com/images/carousel/bird.jpg"
+          src:
+            "https://i2.wp.com/www.deteched.com/wp-content/uploads/2016/11/abstract_pyramids-2560x1440.jpg?fit=2560%2C1440"
         },
         {
-          src: "https://cdn.vuetifyjs.com/images/carousel/planet.jpg"
+          src:
+            "https://stmed.net/sites/default/files/abstract-wallpapers-25162-8981309.jpgO"
         }
       ]
     };
@@ -61,8 +66,7 @@ export default {
     "why-us": WhyUs,
     about: About,
     contact: Contact
-  },
-
+  }
 };
 </script>
 
