@@ -1,26 +1,26 @@
 <template>
-    <v-slide-y-transition mode="out-in">
-      <v-layout column>
-        <v-carousel :style="{ height: windowHeight + 50 + 'px'}">
-          <v-carousel-item
-              v-for="(item,i) in items"
-              :key="i"
-              :src="item.src"
-              reverse-transition="slide-x-transition"
-              transition="slide-y-transition"
-          >
-          </v-carousel-item>
-        </v-carousel>
+  <v-slide-y-transition mode="out-in">
+    <v-layout column>
+      <v-carousel :style="{ height: windowHeight + 50 + 'px'}">
+        <v-carousel-item
+            v-for="(item,i) in items"
+            :key="i"
+            :src="item.src"
+            reverse-transition="slide-x-transition"
+            transition="slide-y-transition"
+        >
+        </v-carousel-item>
+      </v-carousel>
 
-        <info-firm/>
-        <apply/>
-        <why-us />
-        <contact/>
-        <about/>
+      <info-firm />
+      <apply />
+      <why-us />
+      <contact />
+      <about />
 
 
-      </v-layout>
-    </v-slide-y-transition>
+    </v-layout>
+  </v-slide-y-transition>
 </template>
 
 <script>
