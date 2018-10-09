@@ -35,13 +35,12 @@
 </template>
 
 <script>
-import ApplyJob from "../../ApplyJob/ApplyJob.vue"
-export default {
+// import ApplyJob from "../../ApplyJob/ApplyJob.vue";
 
+export default {
   name: "Apply",
   methods: {
-    testFirm(){
-    }
+    testFirm() {}
   }
 };
 </script>
