@@ -55,17 +55,17 @@
   </div>
 </template>
 <script>
-import {validationMixin} from "vuelidate";
-import {required, email, alpha} from "vuelidate/lib/validators";
+import { validationMixin } from "vuelidate";
+import { required, email, alpha } from "vuelidate/lib/validators";
 
 export default {
   mixins: [validationMixin],
 
   validations: {
-    name: {required, alpha},
-    email: {required, email},
-    select: {required},
-    checkbox: {required}
+    name: { required, alpha },
+    email: { required, email },
+    select: { required },
+    checkbox: { required }
   },
 
   data: () => ({

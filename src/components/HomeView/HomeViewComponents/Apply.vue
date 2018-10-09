@@ -24,7 +24,7 @@
         </v-flex>
 
         <v-flex md1>
-          <v-btn>
+          <v-btn @click="testFirm()">
             Apply Now!
           </v-btn>
         </v-flex>
@@ -35,8 +35,14 @@
 </template>
 
 <script>
+import ApplyJob from "../../ApplyJob/ApplyJob.vue"
 export default {
-  name: "Apply"
+
+  name: "Apply",
+  methods: {
+    testFirm(){
+    }
+  }
 };
 </script>
 
