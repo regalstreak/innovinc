@@ -1,4 +1,6 @@
 <template>
+  <!-- todo: Font size bada karo-->
+
   <div id="fullHeight">
       <v-layout column class="my-5" justify-center align-center fill-height>
         <v-flex md1 class="my-3">
