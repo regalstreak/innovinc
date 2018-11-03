@@ -1,10 +1,17 @@
 <template>
   <div id="fullHeight">
     <v-parallax
-        src="https://cdn.vuetifyjs.com/images/backgrounds/vbanner.jpg" style="height: 100%">
+        src="https://images.unsplash.com/photo-1532526338225-bc66ea49a9f2?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&dl=annie-spratt-752789-unsplash.jpg&s=2ed0e84f2fc86a917f89b1f0cb606dff" style="height: 100%">
       <v-container justify-center>
-        <v-layout row justify-center wrap>
+        <v-layout row justify-center fill-height align-center>
           <v-flex md6>
+
+            <div class="text-xs-center">
+              <h6 class="headline">Want to get in touch?</h6>
+            </div>
+
+            <br><br>
+
             <form>
               <v-text-field
                   v-model="name"
@@ -29,17 +36,27 @@
                   v-model="select"
                   :items="items"
                   :error-messages="selectErrors"
-                  label="Item"
+                  label="Your position"
                   solo
                   required
                   @change="$v.select.$touch()"
                   @blur="$v.select.$touch()"
               ></v-select>
 
+              <v-text-field
+                  v-model="description"
+                  :error-messages="descriptionErrors"
+                  label="Description"
+                  solo
+                  required
+                  @input="$v.name.$touch()"
+                  @blur="$v.name.$touch()"
+              ></v-text-field>
+
               <v-checkbox
                   v-model="checkbox"
                   :error-messages="checkboxErrors"
-                  label="Do you agree?"
+                  label="Do you agree with our terms?"
                   required
                   @change="$v.checkbox.$touch()"
                   @blur="$v.checkbox.$touch()"
@@ -56,7 +73,7 @@
 </template>
 <script>
 import { validationMixin } from "vuelidate";
-import { required, email, alpha } from "vuelidate/lib/validators";
+import { alpha, email, required } from "vuelidate/lib/validators";
 
 export default {
   mixins: [validationMixin],
@@ -64,6 +81,7 @@ export default {
   validations: {
     name: { required, alpha },
     email: { required, email },
+    description: { required },
     select: { required },
     checkbox: { required }
   },
@@ -71,8 +89,9 @@ export default {
   data: () => ({
     name: "",
     email: "",
+    description: "",
     select: null,
-    items: ["Foo", "Bar", "Fizz", "Buzz"],
+    items: ["Job seeker", "Recruiter"],
     checkbox: false
   }),
 
@@ -86,13 +105,19 @@ export default {
     selectErrors() {
       const errors = [];
       if (!this.$v.select.$dirty) return errors;
-      !this.$v.select.required && errors.push("Item is required");
+      !this.$v.select.required && errors.push("Reason is required");
       return errors;
     },
     nameErrors() {
       const errors = [];
       if (!this.$v.name.$dirty) return errors;
       !this.$v.name.required && errors.push("Name is required.");
+      return errors;
+    },
+    descriptionErrors() {
+      const errors = [];
+      if (!this.$v.description.$dirty) return errors;
+      !this.$v.description.required && errors.push("Description is required.");
       return errors;
     },
     emailErrors() {
@@ -112,6 +137,7 @@ export default {
       this.$v.$reset();
       this.name = "";
       this.email = "";
+      this.description = "";
       this.select = null;
       this.checkbox = false;
     }

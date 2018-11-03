@@ -1,11 +1,12 @@
 <template>
   <div id="fullHeight">
     <v-parallax
-        src="https://cdn.vuetifyjs.com/images/backgrounds/vbanner.jpg" style="height: 100%">
+        src="https://images.unsplash.com/photo-1538731838746-2fc9e5819830?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&dl=rawpixel-1087170-unsplash.jpg&s=8e677f1591938f7ff8f932d115019a01"
+        style="height: 100%">
       <v-layout column align-center justify-center>
 
 
-        <v-flex md4 style="background-color: aqua" class="text-xs-center">
+        <v-flex md4 class="text-xs-center parallax-main">
 
           <v-card class="elevation-0 transparent ">
             <v-card-title primary-title class="justify-center">
@@ -27,7 +28,7 @@
         </v-flex>
 
         <v-flex md1>
-          <v-btn @click="testFirm()">
+          <v-btn @click="testFirm()" dark>
             Apply Now!
           </v-btn>
         </v-flex>
@@ -51,5 +52,11 @@ export default {
 <style scoped>
 #fullHeight {
   height: 100vh;
+}
+
+.parallax-main {
+  background-color: whitesmoke;
+  padding: 10px 30px 10px 30px;
+  opacity: 0.95;
 }
 </style>

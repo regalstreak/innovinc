@@ -11,7 +11,7 @@
       </v-flex>
       <v-flex md1>
         <v-container grid-list-xl>
-          <v-layout row wrap align-center>
+          <v-layout row wrap>
             <v-flex xs12 md4>
               <v-card class="elevation-0 transparent">
                 <v-card-text class="text-xs-center">
