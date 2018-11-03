@@ -9,12 +9,15 @@
 
           <v-card class="elevation-0 transparent ">
             <v-card-title primary-title class="justify-center">
-              <div class="headline text-xs-center">Want a job?</div>
+              <div class="headline text-xs-center">Apply for jobs</div>
             </v-card-title>
             <v-card-text>
-              Apply for jobs here because vitae nunc lobortis pharetra. Nulla volutpat tincidunt ornare.<br>
-              Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
-              turpis egestas.
+              We provide many different types of jobs. Some of them are listed below:<br>
+              BPO/Call Center, back office, banking industry, <br>
+              hospitality, marketing sector, corporate sector, industrial sector. <br>
+              If you are interested in getting selected or you want to build your own <br>
+              career in these fields, or for any other jobs, <br>
+              please click the button below and Apply Now!
             </v-card-text>
           </v-card>
         </v-flex>

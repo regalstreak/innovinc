@@ -1,34 +1,30 @@
 <template>
   <div id="fullHeight">
-    <v-container>
-      <v-layout column class="my-5" align-center style="height: 100%">
-        <v-flex xs12 sm4 class="my-3">
+      <v-layout column class="my-5" justify-center align-center fill-height>
+        <v-flex md1 class="my-3">
           <div class="text-xs-center">
             <h6 class="headline">Innovinc</h6>
             <span class="subheading">
-            A tagline because they're awesome!<br>
-        </span>
+              Lifting your people and business.<br>
+            </span>
           </div>
         </v-flex>
-        <v-flex xs12>
-          <v-flex xs12 class="text-xs-center">
-            <v-card class="elevation-0 transparent">
-              <v-divider class="mx-5" />
-              <v-card-title primary-title class="layout justify-center">
-                <div class="headline text-xs-center">Who we are</div>
-              </v-card-title>
-              <v-card-text>
-                Cras facilisis mi vitae nunc lobortis pharetra. Nulla volutpat tincidunt ornare.<br>
-                Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
-                turpis egestas.<br>
-                Nullam in aliquet odio. Aliquam eu est vitae tellus bibendum tincidunt. Suspendisse
-                potenti.
-              </v-card-text>
-            </v-card>
-          </v-flex>
+        <v-flex md5 class="text-xs-center">
+          <v-card class="elevation-0 transparent">
+            <v-divider class="mx-5" />
+            <v-card-title primary-title class="layout justify-center">
+              <div class="headline text-xs-center">Who we are</div>
+            </v-card-title>
+            <v-card-text>
+              We, at <b>Innovinc</b> believe that great businesses succeed because of the people in it.<br>
+              We help you ensure that you have the right people with the right skills, <br>
+              knowledge, experience and attitude, engaged at the right time <br>
+              to carry out those roles and deliver results.
+
+            </v-card-text>
+          </v-card>
         </v-flex>
       </v-layout>
-    </v-container>
   </div>
 </template>
 

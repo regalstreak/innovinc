@@ -1,6 +1,6 @@
 <template>
   <v-layout column wrap class="my-5" align-center>
-    <v-flex xs12 sm4 class="my-3">
+    <v-flex class="my-3">
       <div class="text-xs-center">
         <h6 class="headline">About us</h6>
         <span class="subheading">
@@ -8,8 +8,7 @@
         </span>
       </div>
     </v-flex>
-    <v-flex xs12>
-      <v-flex xs12 class="text-xs-center">
+      <v-flex class="text-xs-center">
         <v-card class="elevation-0 transparent">
           <v-divider class="mx-5" />
           <v-card-title primary-title class="layout justify-center">
@@ -24,7 +23,6 @@
           </v-card-text>
         </v-card>
       </v-flex>
-    </v-flex>
   </v-layout>
 </template>
 
