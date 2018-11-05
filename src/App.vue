@@ -12,10 +12,11 @@
       <v-spacer></v-spacer>
 
       <v-toolbar-items>
-        <v-btn flat>Outsource</v-btn>
-        <v-btn flat>Apply for Jobs</v-btn>
-        <v-btn flat>Contact Us</v-btn>
-        <v-btn flat>About Us</v-btn>
+        <v-btn flat href="/outsource">Outsource</v-btn>
+        <v-btn flat href="#Apply">Apply for Jobs</v-btn>
+        <v-btn flat href="#WhyUs">Why Us</v-btn>
+        <v-btn flat href="#Contact">Contact Us</v-btn>
+        <v-btn flat href="#About">About us</v-btn>
       </v-toolbar-items>
 
     </v-toolbar>

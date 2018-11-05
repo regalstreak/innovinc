@@ -1,74 +1,78 @@
 <template>
-  <div id="fullHeight">
-    <v-parallax
-        src="https://images.unsplash.com/photo-1532526338225-bc66ea49a9f2?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&dl=annie-spratt-752789-unsplash.jpg&s=2ed0e84f2fc86a917f89b1f0cb606dff" style="height: 100%">
-      <v-container justify-center>
-        <v-layout row justify-center fill-height align-center>
-          <v-flex md6>
 
-            <div class="text-xs-center">
-              <h6 class="headline">Want to get in touch?</h6>
-            </div>
+  <div id="Contact">
+    <div id="fullHeight">
+      <v-parallax
+          src="https://images.unsplash.com/photo-1532526338225-bc66ea49a9f2?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&dl=annie-spratt-752789-unsplash.jpg&s=2ed0e84f2fc86a917f89b1f0cb606dff"
+          style="height: 100%">
+        <v-container justify-center fluid>
+          <v-layout row justify-center fill-height align-center>
+            <v-flex md6>
 
-            <br><br>
+              <div class="text-xs-center">
+                <h6 class="headline">Want to get in touch?</h6>
+              </div>
 
-            <form>
-              <v-text-field
-                  v-model="name"
-                  :error-messages="nameErrors"
-                  label="Name"
-                  solo
-                  required
-                  @input="$v.name.$touch()"
-                  @blur="$v.name.$touch()"
-              ></v-text-field>
-              <v-text-field
-                  v-model="email"
-                  :error-messages="emailErrors"
-                  label="E-mail"
-                  solo
-                  required
-                  @input="$v.email.$touch()"
-                  @blur="$v.email.$touch()"
-              ></v-text-field>
+              <br><br>
 
-              <v-select
-                  v-model="select"
-                  :items="items"
-                  :error-messages="selectErrors"
-                  label="Your position"
-                  solo
-                  required
-                  @change="$v.select.$touch()"
-                  @blur="$v.select.$touch()"
-              ></v-select>
+              <form>
+                <v-text-field
+                    v-model="name"
+                    :error-messages="nameErrors"
+                    label="Name"
+                    solo
+                    required
+                    @input="$v.name.$touch()"
+                    @blur="$v.name.$touch()"
+                ></v-text-field>
+                <v-text-field
+                    v-model="email"
+                    :error-messages="emailErrors"
+                    label="E-mail"
+                    solo
+                    required
+                    @input="$v.email.$touch()"
+                    @blur="$v.email.$touch()"
+                ></v-text-field>
 
-              <v-text-field
-                  v-model="description"
-                  :error-messages="descriptionErrors"
-                  label="Description"
-                  solo
-                  required
-                  @input="$v.name.$touch()"
-                  @blur="$v.name.$touch()"
-              ></v-text-field>
+                <v-select
+                    v-model="select"
+                    :items="items"
+                    :error-messages="selectErrors"
+                    label="Your position"
+                    required
+                    solo
+                    @change="$v.select.$touch()"
+                    @blur="$v.select.$touch()"
+                ></v-select>
 
-              <v-checkbox
-                  v-model="checkbox"
-                  :error-messages="checkboxErrors"
-                  label="Do you agree with our terms?"
-                  required
-                  @change="$v.checkbox.$touch()"
-                  @blur="$v.checkbox.$touch()"
-              ></v-checkbox>
+                <v-text-field
+                    v-model="description"
+                    :error-messages="descriptionErrors"
+                    label="Description"
+                    solo
+                    required
+                    @input="$v.name.$touch()"
+                    @blur="$v.name.$touch()"
+                ></v-text-field>
 
-              <v-btn @click="submit">submit</v-btn>
-              <v-btn @click="clear">clear</v-btn>
-            </form>
-          </v-flex>
-        </v-layout>
-      </v-container>
-    </v-parallax>
+                <v-checkbox
+                    v-model="checkbox"
+                    :error-messages="checkboxErrors"
+                    label="Do you agree with our terms?"
+                    required
+                    @change="$v.checkbox.$touch()"
+                    @blur="$v.checkbox.$touch()"
+                ></v-checkbox>
+
+                <v-btn @click="submit">submit</v-btn>
+                <v-btn @click="clear">clear</v-btn>
+              </form>
+            </v-flex>
+          </v-layout>
+        </v-container>
+      </v-parallax>
+    </div>
   </div>
 </template>
 <script>

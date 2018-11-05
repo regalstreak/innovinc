@@ -4,7 +4,12 @@
       <div style="height: calc( 100vh + 60px )">
         <v-carousel style="height: 100%">
 
-          <!--:src="`${baseUrl}images/carousel/1.jpg`"-->
+          <!--:src="`${baseUrl}images/carousel/1.jpg`"
+          src="https://images.unsplash.com/photo-1535554467849-ca1305c79fc8?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&dl=rawpixel-798700-unsplash.jpg&s=74e811aa48c6602325eea1634416881d"
+          -->
+
+
+          <!-- todo: Outsource: Offshore jobs: , overseas jobs-->
           <v-carousel-item
               src="https://images.unsplash.com/photo-1535554467849-ca1305c79fc8?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&dl=rawpixel-798700-unsplash.jpg&s=74e811aa48c6602325eea1634416881d"
           >
@@ -36,9 +41,13 @@
                   </div>
                 </v-flex>
 
-                <v-flex md1 xs1 class="my-2 carousel-sub">
+                <v-flex md1 xs1>
                   <div class="text-xs-center">
-                    <h6 class="headline carousel-sub-text">Apply now</h6>
+
+                    <v-btn class="text-xs-center" href="#Apply" dark>
+                      <h6 class="headline carousel-sub-text">Apply Now</h6>
+                    </v-btn>
+
                   </div>
                 </v-flex>
               </v-layout>
@@ -56,10 +65,10 @@
                   </div>
                 </v-flex>
 
-                <v-flex md1 xs1 class="my-2 carousel-sub">
-                  <div class="text-xs-center ">
+                <v-flex md1 xs1>
+                  <v-btn class="text-xs-center" href="#Contact" dark>
                     <h6 class="headline carousel-sub-text">Contact us</h6>
-                  </div>
+                  </v-btn>
                 </v-flex>
               </v-layout>
             </div>

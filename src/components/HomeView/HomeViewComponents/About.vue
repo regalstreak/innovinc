@@ -1,5 +1,5 @@
 <template>
-  <v-container fluid style="background-color: #000000">
+  <v-container id="About" fluid style="background-color: #000000">
 
     <v-layout align-center justify-space-around row>
       <v-flex class="text-xs-center" style="opacity: 0">
