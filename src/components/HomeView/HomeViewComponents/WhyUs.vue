@@ -22,11 +22,10 @@
                     <div class="headline text-xs-center">The best consultation</div>
                   </v-card-title>
                   <v-card-text class="paraFont">
-                    Cras facilisis mi vitae nunc lobortis pharetra. Nulla volutpat tincidunt ornare.
-                    Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
-                    turpis egestas.
-                    Nullam in aliquet odio. Aliquam eu est vitae tellus bibendum tincidunt. Suspendisse
-                    potenti.
+                    At Innovinc, we understand what the client needs. We swiftly find the matching talent
+                    and focus on quality. Our industry-savvy recruiters and our knack to accurately counsel high-profile 
+                    industry talent, enables us to create a strong impression. 
+                    This makes us their natural choice when they look for reliable partners. At the end of the day, we’re all about “people”.
                   </v-card-text>
                 </v-card>
               </v-flex>
@@ -54,7 +53,8 @@
                     <div class="headline text-xs-center">Fully customised</div>
                   </v-card-title>
                   <v-card-text class="paraFont">
-                    We help candidates grow themselves personally as well as professionally. (Expertise, Knowledge)
+                    We help candidates grow themselves personally as well as professionally. (Expertise, Knowledge) <br>
+                    We use the latest and cutting edge technology to handpick the best available talent on board. 
                   </v-card-text>
                 </v-card>
               </v-flex>
