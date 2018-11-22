@@ -11,9 +11,9 @@
 
             <v-card class="elevation-0 transparent ">
               <v-card-title primary-title class="justify-center">
-                <div class="headline text-xs-center">Apply for jobs</div>
+                <div class="headFont text-xs-center">Apply for jobs</div>
               </v-card-title>
-              <v-card-text>
+              <v-card-text class="paraFont">
                 We provide many different types of jobs. Some of them are listed below:<br>
                 BPO/Call Center, back office, banking industry, <br>
                 hospitality, marketing sector, corporate sector, industrial sector. <br>
@@ -29,7 +29,7 @@
           </v-flex>
 
           <v-flex md1>
-            <v-btn @click="testFirm()" dark>
+            <v-btn to="/Apply" dark>
               Apply Now!
             </v-btn>
           </v-flex>
@@ -46,10 +46,7 @@
 // todo: Name, number, email, field and work experience, describe job u want (job description)
 
 export default {
-  name: "Apply",
-  methods: {
-    testFirm() {}
-  }
+  name: "Apply"
 };
 </script>
 
@@ -62,5 +59,13 @@ export default {
   background-color: whitesmoke;
   padding: 10px 30px 10px 30px;
   opacity: 0.95;
+}
+
+.paraFont {
+  font-size: 2.7vh;
+}
+
+.headFont {
+  font-size: 5vh;
 }
 </style>

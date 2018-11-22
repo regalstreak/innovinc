@@ -1,26 +1,21 @@
 <template>
   <v-app>
-    <v-toolbar
-        app
-        flat
-        scroll-off-screen
-        :color="updateToolbarScrollColor()"
-
-    >
-      <v-toolbar-title v-text="title"></v-toolbar-title>
+    <v-toolbar app flat scroll-off-screen :color="updateToolbarScrollColor()">
+      <v-toolbar-title v-text="title" :to="`${baseUrl}`"></v-toolbar-title>
 
       <v-spacer></v-spacer>
 
       <v-toolbar-items>
-        <v-btn flat href="/outsource">Outsource</v-btn>
-        <v-btn flat href="#Apply">Apply for Jobs</v-btn>
-        <v-btn flat href="#WhyUs">Why Us</v-btn>
-        <v-btn flat href="#Contact">Contact Us</v-btn>
-        <v-btn flat href="#About">About us</v-btn>
+        <v-btn flat :href="`${baseUrl}`">Home</v-btn>
+        <v-btn flat to="/outsource">Outsource</v-btn>
+        <v-btn flat :href="`${baseUrl}#Apply`">Apply for jobs</v-btn>
+        <v-btn flat :href="`${baseUrl}#WhyUs`">Why Us</v-btn>
+        <v-btn flat :href="`${baseUrl}#Contact`">Contact Us</v-btn>
+        <v-btn flat :href="`${baseUrl}#About`">About Us</v-btn>
       </v-toolbar-items>
 
     </v-toolbar>
-    <router-view/>
+    <router-view />
   </v-app>
 </template>
 
@@ -43,6 +38,11 @@ export default {
       } else {
         return "rgba(0, 0, 0, 0)";
       }
+    }
+  },
+  computed: {
+    baseUrl: () => {
+      return process.env.BASE_URL;
     }
   },
   mounted() {

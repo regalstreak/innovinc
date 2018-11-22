@@ -4,8 +4,8 @@
       <v-layout column align-center wrap justify-center fill-height>
         <v-flex md1>
           <div class="text-xs-center">
-            <h6 class="headline">Why us?</h6>
-            <span class="subheading">
+            <h6 class="headFont">Why us?</h6>
+            <span class="paraFont">
             We are a firm based in Mumbai, CBD<br>
         </span>
           </div>
@@ -21,7 +21,7 @@
                   <v-card-title primary-title class="layout justify-center">
                     <div class="headline text-xs-center">The best consultation</div>
                   </v-card-title>
-                  <v-card-text>
+                  <v-card-text class="paraFont">
                     Cras facilisis mi vitae nunc lobortis pharetra. Nulla volutpat tincidunt ornare.
                     Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
                     turpis egestas.
@@ -38,7 +38,7 @@
                   <v-card-title primary-title class="layout justify-center">
                     <div class="headline">We're Fast!</div>
                   </v-card-title>
-                  <v-card-text>
+                  <v-card-text class="paraFont">
                     We, at Innovinc provide you with your career and jobs as quickly as possible.
                     We prioritise you and value you as our candidate. We are committed at
                     providing you with the best jobs in a short period of time.
@@ -53,7 +53,7 @@
                   <v-card-title primary-title class="layout justify-center">
                     <div class="headline text-xs-center">Fully customised</div>
                   </v-card-title>
-                  <v-card-text>
+                  <v-card-text class="paraFont">
                     We help candidates grow themselves personally as well as professionally. (Expertise, Knowledge)
                   </v-card-text>
                 </v-card>
@@ -76,5 +76,14 @@ export default {
 #fullHeight {
   height: 100vh;
   wrap-option: true;
+}
+
+.paraFont {
+  font-size: 2.7vh;
+}
+
+.headFont {
+  font-size: 5vh;
+  font-weight: normal;
 }
 </style>
